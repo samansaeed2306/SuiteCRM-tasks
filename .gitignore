@@ -1,0 +1,40 @@
+# SuiteCRM cache and logs
+cache/
+custom/history/
+upload/
+logs/
+suitecrm.log
+suitecrm_1.log
+suitecrm_2.log
+install.log
+upgradeWizard.log
+upgradeWizard/
+upgrades/
+
+# Environment-specific files
+config.php
+config_override.php
+.env
+
+# Dependency directories
+vendor/
+node_modules/
+
+# IDE and OS-specific files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Composer and npm files
+composer.lock
+package-lock.json
+
+# Coverage & test files
+coverage/
+junit.xml
+modules/AOD_Index/Index/*.cfs
+modules/AOD_Index/Index/*.sti
+modules/AOD_Index/Index/*.del
+modules/AOD_Index/Index/*
+
