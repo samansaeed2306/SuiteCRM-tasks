@@ -5,6 +5,13 @@
 $hook_array = Array(); 
 // position, file, function 
 $hook_array['before_save'] = Array(); 
+$hook_array['before_save'][] = Array(
+    1, // Priority (1 is high)
+    'Format Account Name', // Name of the hook
+    'custom/modules/Accounts/AccountNameFormatter.php', // Path to the custom file
+    'AccountNameFormatter', // Class name
+    'formatAccountName' // Method name
+);
 $hook_array['before_save'][] = Array(77, 'updateGeocodeInfo', 'modules/Accounts/AccountsJjwg_MapsLogicHook.php','AccountsJjwg_MapsLogicHook', 'updateGeocodeInfo'); 
 $hook_array['after_save'] = Array(); 
 $hook_array['after_save'][] = Array(77, 'updateRelatedMeetingsGeocodeInfo', 'modules/Accounts/AccountsJjwg_MapsLogicHook.php','AccountsJjwg_MapsLogicHook', 'updateRelatedMeetingsGeocodeInfo'); 
