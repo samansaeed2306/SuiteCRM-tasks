@@ -16,5 +16,4 @@ $hook_array['after_relationship_delete'] = Array();
 $hook_array['after_relationship_delete'][] = Array(77, 'deleteRelationship', 'modules/Opportunities/OpportunitiesJjwg_MapsLogicHook.php','OpportunitiesJjwg_MapsLogicHook', 'deleteRelationship'); 
 
 
-
 ?>
