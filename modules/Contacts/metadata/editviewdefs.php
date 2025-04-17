@@ -157,6 +157,7 @@ array(
             'label' => 'LBL_EMAIL_ADDRESS',
           ),
         ),
+
         5 =>
         array(
           0 =>
