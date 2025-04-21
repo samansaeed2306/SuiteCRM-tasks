@@ -9,7 +9,13 @@ $hook_array['before_save'][] = Array(1, 'Leads push feed', 'modules/Leads/SugarF
 $hook_array['before_save'][] = Array(77, 'updateGeocodeInfo', 'modules/Leads/LeadsJjwg_MapsLogicHook.php','LeadsJjwg_MapsLogicHook', 'updateGeocodeInfo'); 
 $hook_array['after_save'] = Array(); 
 $hook_array['after_save'][] = Array(77, 'updateRelatedMeetingsGeocodeInfo', 'modules/Leads/LeadsJjwg_MapsLogicHook.php','LeadsJjwg_MapsLogicHook', 'updateRelatedMeetingsGeocodeInfo'); 
-
+$hook_array['after_save'][] = array(
+    1,
+    'Send email to assigned user on Lead creation',
+    'custom/modules/Leads/LeadEmailHook.php',
+    'LeadEmailHook',
+    'sendEmailToAssignedUser'
+);
 
 
 ?>
