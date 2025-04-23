@@ -1,7 +1,4 @@
-<?php 
- //WARNING: The contents of this file are auto-generated
-
-
+<?php
 $entry_point_registry['LeadFormEntryPoint'] = array(
     'file' => 'custom/LeadFormEntryPoint.php',
     'auth' => false,
@@ -44,32 +41,3 @@ echo json_encode($input);
 // header("Location: index.php?entryPoint=LeadThankYou&id={$lead->id}");
 // exit;
 
-
-
-$entry_point_registry['LeadThankYou'] = array(
-    'file' => 'custom/LeadThankYou.php',
-    'auth' => false,
-);
-
-if (!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
-
-require_once 'include/entryPoint.php';
-
-$id = $_GET['id'] ?? '';
-
-echo "<h1>🎉 Thank You!</h1>";
-echo "<p>Your lead has been created successfully.</p>";
-if ($id) {
-    echo "<p><a href='index.php?module=Leads&action=DetailView&record={$id}'>View Lead</a></p>";
-}
-
-
-  $entry_point_registry['MyTimeEntryPoint'] = array(
-      'file' => 'custom/MyTimeEntryPoint.php',
-      'auth' => true,
-  );
-
-  if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
-$date = new DateTime();
-// echo $date->format('r');
-?>
