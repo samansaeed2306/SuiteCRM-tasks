@@ -71,7 +71,7 @@ array(
             ),
           ),
           'GREETINGS_BUTTON' => array(
-            'customCode' => '<input type="button" class="button" value="Greetings" onclick="showGreeting(\'{$fields.last_name.value}\');" />',
+            'customCode' => '<input type="button" class="button" value="{$MOD.LBL_GREETINGS_BUTTON}"  onclick="showGreeting(\'{$fields.last_name.value}\');" />',
           ),
           'AOS_GENLET' =>
           array(

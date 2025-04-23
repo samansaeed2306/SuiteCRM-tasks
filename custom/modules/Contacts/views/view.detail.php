@@ -69,6 +69,8 @@ class ContactsViewDetail extends ViewDetail
         if (isset($admin->settings['portal_on']) && $admin->settings['portal_on']) {
             $this->ss->assign("PORTAL_ENABLED", true);
         }
+        // global $mod_strings;
+        // echo '<pre>'; print_r($mod_strings); echo '</pre>'; exit;
         parent::display();
     }
 }
