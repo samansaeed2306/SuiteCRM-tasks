@@ -71,7 +71,7 @@ array(
             ),
           ),
           'GREETINGS_BUTTON' => array(
-            'customCode' => '<input type="button" class="button" value="Greetings" onclick="alert(\'Hello {$fields.last_name.value} from SuiteCRM!\');" />',
+            'customCode' => '<input type="button" class="button" value="Greetings" onclick="showGreeting(\'{$fields.last_name.value}\');" />',
           ),
           'AOS_GENLET' =>
           array(

@@ -37,7 +37,5 @@ $lead->save();
 $input['lead_id'] = $lead->id;
 
 echo json_encode($input);
-// Redirect to Thank You page
-// header("Location: index.php?entryPoint=LeadThankYou&id={$lead->id}");
-// exit;
+
 
