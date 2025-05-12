@@ -420,7 +420,7 @@ function insertProductHeader(tableid){
   // d.innerHTML=SUGAR.language.get(module_sugar_grp1, 'LBL_DISCOUNT_AMT');
   // var cost = x.insertCell(5);
   // cost.style.color = "rgb(68,68,68)";
-  // cost.innerHTML = SUGAR.language.get(module_sugar_grp1, 'LBL_COST');
+  // cost.innerHTML = SUGAR.language.get(module_sugar_grp1, 'LBL_PRODUCT_COST_PRICE');
 
   var e=x.insertCell(6);
   e.style.color="rgb(68,68,68)";

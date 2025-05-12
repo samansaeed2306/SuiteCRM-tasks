@@ -28,6 +28,7 @@ function display_lines($focus, $field, $value, $view)
 
     $enable_groups = (int)$sugar_config['aos']['lineItems']['enableGroups'];
     $total_tax = (int)$sugar_config['aos']['lineItems']['totalTax'];
+    echo '<pre>'; print_r($mod_strings); echo '</pre>';
 
     $html = '';
 
@@ -175,7 +176,7 @@ function display_lines($focus, $field, $value, $view)
                 $product .= "<td class='tabDetailViewDF' style='text-align: right; padding:2px;'>".currency_format_number($line_item->product_list_price, $params)."</td>";
 
                 $product .= "<td class='tabDetailViewDF' style='text-align: right; padding:2px;'>".get_discount_string($line_item->discount, $line_item->product_discount, $params, $locale, $sep)."</td>";
-                $product .= "<td class='tabDetailViewDF' style='text-align: right; padding:2px;'>".currency_format_number($line_item->product_cost_price, $params)."</td>";
+                // $product .= "<td class='tabDetailViewDF' style='text-align: right; padding:2px;'>".currency_format_number($line_item->product_cost_price, $params)."</td>";
                 $product .= "<td class='tabDetailViewDF' style='text-align: right; padding:2px;'>".currency_format_number($line_item->product_unit_price, $params)."</td>";
                 $product .= "<td class='tabDetailViewDF' style='text-align: right; padding:2px;'>".display_tax_detail_view($locale, $line_item->vat, $sep)."</td>";
                 $product .= "<td class='tabDetailViewDF' style='text-align: right; padding:2px;'>".currency_format_number($line_item->vat_amt, $params)."</td>";
